@@ -27,6 +27,8 @@ db.getConnection()
 app.use("/api/auth", require("./routes/authRoutes"));
 app.use("/api/strava", require("./routes/stravaRoutes"));
 app.use("/api/races", require("./routes/raceRoutes"));
+app.use("/api/users", require("./routes/userRoutes"));
+app.use("/api/leaderboard", require("./routes/leaderboardRoutes"));
 
 // Health check
 app.get("/", (req, res) => {
